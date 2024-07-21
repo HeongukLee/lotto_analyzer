@@ -39,9 +39,6 @@ draw_no  = 1
 with open('lottoRes.csv', 'w', newline='') as csvfile:
     # CSV 파일 쓰기
     writer = csv.writer(csvfile, delimiter=',')
-    
-    # column 작성
-    writer.writerow('회차,날짜,번호1,번호2,번호3,번호4,번호5,번호6,보너스번호')
 
     # 1화부터 최신화까지 크롤링
     for draw_no in range(1, maxCount+1):
